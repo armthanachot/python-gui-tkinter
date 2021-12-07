@@ -48,6 +48,7 @@ menuItem = Menu()
 menuItem.add_command(label="New File",command=fn.newFile) # command ใช้สำหรับการ call function เมื่อมีการคลิก
 menuItem.add_command(label="Open")
 menuItem.add_command(label="Save")
+menuItem.add_command(label="About",command=fn.aboutProgram)
 menuItem.add_command(label="Exit")
 
 # Main menu

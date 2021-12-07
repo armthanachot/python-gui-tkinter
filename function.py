@@ -1,4 +1,5 @@
 from tkinter import *
+import tkinter.messagebox as msgBox
 
 def messageLogging():
         print("Hello this is message")
@@ -21,3 +22,8 @@ def newFile():
         window = Tk() 
         window.title("New File")
         window.mainloop()
+    
+
+# Message Box 
+def aboutProgram():
+    msgBox.showinfo("Infomation Of Program","developer is THTJ") # showInfo มี parameter  ตัวคือ title และ message ที่แสดง
