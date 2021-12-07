@@ -40,6 +40,8 @@ btn2 = Button(root,text="text logging", fg="black", bg="white", font=20,command=
 btn3 = Button(root,text="text display", fg="black", bg="yellow", font=20,command=lambda: fn.displayMessage(root,txt)).pack()
 # ใช้ lambda function หากมีการส่ง argument ถ้าไม่ใช้ จะทำให้ function นั้นถูกเรียกทันที
 btn4 = Button(root,text="Open Report", fg="black", bg="purple", font=20, command=fn.openReportWindow).pack()
+btn5 = Button(root,text="choose color",fg="black",bg="pink",font=20,command=lambda: fn.selectColor(root)).pack()
+btn6 = Button(root,text="choose file",fg="black",bg="skyblue",font=20,command=fn.selectFile).pack()
 
 # Menu (toolsbar ด้านบน)
 
