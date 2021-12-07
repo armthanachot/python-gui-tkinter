@@ -22,7 +22,9 @@ def newFile():
         window = Tk() 
         window.title("New File")
         window.mainloop()
-    
+ 
+def closeProgram(root):
+        root.destroy()   
 
 # Message Box 
 def aboutProgram():

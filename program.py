@@ -49,7 +49,7 @@ menuItem.add_command(label="New File",command=fn.newFile) # command ใช้ส
 menuItem.add_command(label="Open")
 menuItem.add_command(label="Save")
 menuItem.add_command(label="About",command=fn.aboutProgram)
-menuItem.add_command(label="Exit")
+menuItem.add_command(label="Exit",command=lambda: fn.closeProgram(root))
 
 # Main menu
 myMenu = Menu()
