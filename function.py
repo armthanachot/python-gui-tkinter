@@ -24,8 +24,10 @@ def newFile():
         window.mainloop()
  
 def closeProgram(root):
-        root.destroy()   
-
+        confirm = msgBox.askquestion("ยืนยัน","คุณต้องการปิดโปรแกรมหรือไม่ ?")
+        if confirm == "yes":
+            root.destroy()   
+        
 # Message Box 
 def aboutProgram():
     msgBox.showinfo("Infomation Of Program","developer is THTJ") # showInfo มี parameter  ตัวคือ title และ message ที่แสดง
