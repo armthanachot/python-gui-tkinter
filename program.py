@@ -41,6 +41,23 @@ btn3 = Button(root,text="text display", fg="black", bg="yellow", font=20,command
 # ใช้ lambda function หากมีการส่ง argument ถ้าไม่ใช้ จะทำให้ function นั้นถูกเรียกทันที
 btn4 = Button(root,text="Open Report", fg="black", bg="purple", font=20, command=fn.openReportWindow).pack()
 
+# Menu (toolsbar ด้านบน)
+
+# Menu Items (sub menu)
+menuItem = Menu() 
+menuItem.add_command(label="New File",command=fn.newFile) # command ใช้สำหรับการ call function เมื่อมีการคลิก
+menuItem.add_command(label="Open")
+menuItem.add_command(label="Save")
+menuItem.add_command(label="Exit")
+
+# Main menu
+myMenu = Menu()
+# add menu 
+myMenu.add_cascade(label="File",menu=menuItem) # หากมีเมนูย่อย ให้ใช้ property menuItem 
+myMenu.add_cascade(label="Help") 
+
+root.config(menu=myMenu)
+
 # กำหนดขนาดหน้าจอ และตำแหน่งหน้าจอ
 root.geometry("500x400+0+0") # กว้าง ยาว 500 * 400 ต้องเขียนติดกัน จากนั้น หากมีการกำหนดตำแหน่งของหน้าต่างด้วย ให้ + เพิ่มเข้าไป อ้างอิงตามแกน X และแกน Y โดยจุด 0 0 จะอยู่ที่ มุมซ้ายบน
 

@@ -14,3 +14,10 @@ def openReportWindow():
     report = Tk()
     report.title("Report")
     report.geometry("500x300")
+
+
+# Menu 
+def newFile():
+        window = Tk() 
+        window.title("New File")
+        window.mainloop()
